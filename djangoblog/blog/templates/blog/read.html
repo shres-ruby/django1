@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read blog</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:yellow;">{{ data.title | upper }}</h1>
+    Author : {{ data.author }} | Created on : {{ data.created_at }} | Last modified : {{ data.updated_at }}<br><br>
+    {{ data.description }}<br><br><br>
+
+    <a href="/details/" style="color:white;">Back to Blog List</a> |   
+    <a href="/" style="color:white;">Back to Home Page</a>
+</body>
+</html>
